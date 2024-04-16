@@ -1,0 +1,23 @@
+<the49:BottomSheet xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                   xmlns:the49="https://schemas.the49.com/dotnet/2023/maui"
+                   x:Class="Primary.GoalTune"
+                   Padding="16,32">
+    <the49:BottomSheet.Detents>
+        <the49:FullscreenDetent />
+    </the49:BottomSheet.Detents>
+    <StackLayout Spacing="50">
+        <Entry x:Name="EntryGoal"
+               Keyboard="Text"
+               Placeholder="Goal"
+               HorizontalOptions="Start"
+               VerticalOptions="Start"
+               FontSize="18"
+               MaxLength="70" />
+        <Entry x:Name="EntryGoalDesc"
+               Placeholder="manifest today's goal"
+               HorizontalOptions="Start"
+               VerticalOptions="Start"
+               MaxLength="150" />
+    </StackLayout>
+</the49:BottomSheet>

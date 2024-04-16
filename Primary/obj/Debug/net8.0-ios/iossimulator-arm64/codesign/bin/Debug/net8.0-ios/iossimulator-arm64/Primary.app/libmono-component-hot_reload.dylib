@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - /Users/ericross/goalApp/Primary/bin/Debug/net8.0-ios/iossimulator-arm64/Primary.app/libmono-component-hot_reload.dylib
