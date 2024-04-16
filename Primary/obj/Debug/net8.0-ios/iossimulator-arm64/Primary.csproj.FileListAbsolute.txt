@@ -311,6 +311,7 @@
 /Users/ericross/goalApp/Primary/obj/Debug/net8.0-ios/iossimulator-arm64/Primary.genruntimeconfig.cache
 /Users/ericross/goalApp/Primary/obj/Debug/net8.0-ios/iossimulator-arm64/ref/Primary.dll
 /Users/ericross/goalApp/Primary/bin/Debug/net8.0-ios/iossimulator-arm64/The49.Maui.BottomSheet.dll
+/Users/ericross/goalApp/Primary/obj/Debug/net8.0-ios/iossimulator-arm64/Primary.sourcelink.json
 /Users/ericross/goalApp/Primary/obj/Debug/net8.0-ios/iossimulator-arm64/resourcestamps/Microsoft.CSharp.stamp
 /Users/ericross/goalApp/Primary/obj/Debug/net8.0-ios/iossimulator-arm64/resourcestamps/Microsoft.Extensions.Configuration.Abstractions.stamp
 /Users/ericross/goalApp/Primary/obj/Debug/net8.0-ios/iossimulator-arm64/resourcestamps/Microsoft.Extensions.Configuration.stamp

@@ -3,7 +3,7 @@
 public partial class MainPage : ContentPage
 {
 	string[] words =
-	["Objective", "Goal", "Focus", "Mission", "Plan", "Target", "Aim", "Intent", "Motive", "Purpose", "Resolve", "Conviction", "Drive"];
+	["Objective", "Goal", "Focus", "Mission", "Plan", "Aim", "Intent", "Motive", "Purpose", "Resolve", "Conviction", "Drive"];
 
 	public MainPage()
 	{

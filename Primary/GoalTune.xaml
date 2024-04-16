@@ -6,18 +6,23 @@
     <the49:BottomSheet.Detents>
         <the49:FullscreenDetent />
     </the49:BottomSheet.Detents>
-    <StackLayout Spacing="50">
-        <Entry x:Name="EntryGoal"
-               Keyboard="Text"
-               Placeholder="Goal"
-               HorizontalOptions="Start"
-               VerticalOptions="Start"
-               FontSize="18"
-               MaxLength="70" />
-        <Entry x:Name="EntryGoalDesc"
-               Placeholder="manifest today's goal"
-               HorizontalOptions="Start"
-               VerticalOptions="Start"
-               MaxLength="150" />
+    <StackLayout Spacing="10">
+        <Button Text="Next"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+                CornerRadius="20" />
+        <Editor x:Name="EntryGoal"
+                Keyboard="Text"
+                AutoSize="TextChanges"
+                Placeholder="Goal"
+                FontAttributes="Bold"
+                VerticalTextAlignment="Start"
+                FontSize="25"
+                MaxLength="70" />
+        <Editor x:Name="EntryGoalDesc"
+                AutoSize="TextChanges"
+                Placeholder="(manifest today's goal)"
+                FontSize="18"
+                MaxLength="150" />
     </StackLayout>
 </the49:BottomSheet>

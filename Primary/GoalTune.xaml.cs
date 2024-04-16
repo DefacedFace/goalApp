@@ -15,6 +15,7 @@ public partial class GoalTune
 
 	}
 
+
 	private void TargetGoalEntry(object sender, EventArgs e)
 	{
 		EntryGoal.Focus();
