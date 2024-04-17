@@ -1,11 +1,14 @@
+using System.Windows.Input;
+
 namespace Primary;
 
-public partial class GoalTune
+public partial class GoalSheet
 {
 
-	public GoalTune()
+	public GoalSheet()
 	{
 		InitializeComponent();
+
 		Loaded += TargetGoalEntry;
 
 	}
@@ -24,13 +27,10 @@ public partial class GoalTune
 
 	{
 		bool decision = await App.Current.MainPage.DisplayAlert
-		("Finalize Goal?", "You won't be able to change or cancel goal for 24 hours.", "Accept", "Cancel");
+		("Finalize Goal?",
+		 "You won't be able to change or cancel goal for 24 hours.", "Accept", "Cancel");
 
-		if (decision)
-
-		{
-
-		}
+		if (decision) { await DismissAsync(); }
 
 	}
 

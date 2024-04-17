@@ -17,16 +17,16 @@ public partial class MainPage : ContentPage
 	private void InitGoalButton(object sender, EventArgs e)
 
 	{
-		var page = new GoalTune()
+		GoalSheet goalSheet = new GoalSheet()
 		{
 			HasHandle = true,
 			CornerRadius = 10
 		};
-		page.ShowAsync(Window);
+		goalSheet.ShowAsync(Window);
+
+
 	}
 
+
+
 }
-
-
-
-
