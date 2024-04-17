@@ -2,8 +2,8 @@
 
 public partial class MainPage : ContentPage
 {
-	string[] words =
-	["Objective", "Goal", "Focus", "Mission", "Plan", "Aim", "Intent", "Motive", "Purpose", "Resolve", "Conviction", "Drive"];
+	string[] words = ["Objective", "Goal", "Focus", "Mission", "Plan",
+	"Aim", "Intent", "Motive", "Purpose", "Resolve", "Conviction", "Drive", "Direction"];
 
 	public MainPage()
 	{
@@ -17,7 +17,7 @@ public partial class MainPage : ContentPage
 	private void InitGoalButton(object sender, EventArgs e)
 
 	{
-		var page = new GoalTune
+		var page = new GoalTune()
 		{
 			HasHandle = true,
 			CornerRadius = 10
@@ -25,6 +25,8 @@ public partial class MainPage : ContentPage
 		page.ShowAsync(Window);
 	}
 
-
 }
+
+
+
 

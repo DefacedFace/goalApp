@@ -7,12 +7,24 @@
         <the49:FullscreenDetent />
     </the49:BottomSheet.Detents>
     <StackLayout Spacing="10">
-        <Button Text="Next"
+        <Button Text="Done"
+                x:Name="GoalDoneButton"
                 HorizontalOptions="End"
                 VerticalOptions="End"
-                CornerRadius="20" />
+                CornerRadius="20"
+                Clicked="PushDoneButton">
+            <Button.Triggers>
+                <DataTrigger TargetType="Button"
+                             Binding="{Binding Source={x:Reference EntryGoal},&#xA;                                       Path=Text.Length}"
+                             Value="0">
+                    <Setter Property="IsEnabled"
+                            Value="False" />
+                </DataTrigger>
+            </Button.Triggers>
+        </Button>
         <Editor x:Name="EntryGoal"
                 Keyboard="Text"
+                Text=""
                 AutoSize="TextChanges"
                 Placeholder="Goal"
                 FontAttributes="Bold"

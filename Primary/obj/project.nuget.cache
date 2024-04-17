@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "6BXdnj+/JFhUIUaNhr9+zFpFDEqsqVHab7Kce1KOTC6Jyb0rfNVABTe1em5xEDsCZht8IREO8wbRl3NJ6g1S/w==",
+  "dgSpecHash": "TRmtSL6/0hbtXzaPVUJ5NaUC7vQmyyj1RID7Dzolek68XrP5zfikio9J50se7RAX2ruoXIX1IJnmUeGO3cj1Gg==",
   "success": true,
   "projectFilePath": "/Users/ericross/goalApp/Primary/Primary.csproj",
   "expectedPackageFiles": [
+    "/Users/ericross/.nuget/packages/communitytoolkit.mvvm/8.2.2/communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "/Users/ericross/.nuget/packages/googlegson/2.10.1.4/googlegson.2.10.1.4.nupkg.sha512",
     "/Users/ericross/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "/Users/ericross/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
