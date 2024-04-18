@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
+using Syncfusion.Maui.Core.Hosting;
 using The49.Maui.BottomSheet;
+
 namespace Primary;
 
 public static class MauiProgram
@@ -10,6 +12,7 @@ public static class MauiProgram
 		builder
 			.UseMauiApp<App>()
 			.UseBottomSheet()
+			.ConfigureSyncfusionCore()
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

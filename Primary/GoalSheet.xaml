@@ -32,6 +32,7 @@
                 FontSize="25"
                 MaxLength="70" />
         <Editor x:Name="EntryGoalDesc"
+                Text=""
                 AutoSize="TextChanges"
                 Placeholder="(manifest today's goal)"
                 FontSize="18"

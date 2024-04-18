@@ -73,6 +73,10 @@
               "version": "[8.0.4, )",
               "autoReferenced": true
             },
+            "Syncfusion.Maui.Cards": {
+              "target": "Package",
+              "version": "[25.1.40, )"
+            },
             "The49.Maui.BottomSheet": {
               "target": "Package",
               "version": "[8.0.3, )"
@@ -120,6 +124,10 @@
               "version": "[8.0.4, )",
               "autoReferenced": true
             },
+            "Syncfusion.Maui.Cards": {
+              "target": "Package",
+              "version": "[25.1.40, )"
+            },
             "The49.Maui.BottomSheet": {
               "target": "Package",
               "version": "[8.0.3, )"
@@ -166,6 +174,10 @@
               "target": "Package",
               "version": "[8.0.4, )",
               "autoReferenced": true
+            },
+            "Syncfusion.Maui.Cards": {
+              "target": "Package",
+              "version": "[25.1.40, )"
             },
             "The49.Maui.BottomSheet": {
               "target": "Package",

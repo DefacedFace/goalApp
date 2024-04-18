@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6BXdnj+/JFhUIUaNhr9+zFpFDEqsqVHab7Kce1KOTC6Jyb0rfNVABTe1em5xEDsCZht8IREO8wbRl3NJ6g1S/w==",
+  "dgSpecHash": "ckfx/WumLNwSo1kgrJN1el0Esz1g92ygzW4dJzYY68qrvAaSoi/PcHTf4WgLmds8N1UTcttxwnleFYyt5CZ21Q==",
   "success": true,
   "projectFilePath": "/Users/ericross/goalApp/Primary/Primary.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,9 @@
     "/Users/ericross/.nuget/packages/microsoft.maui.graphics/8.0.7/microsoft.maui.graphics.8.0.7.nupkg.sha512",
     "/Users/ericross/.nuget/packages/microsoft.maui.resizetizer/8.0.7/microsoft.maui.resizetizer.8.0.7.nupkg.sha512",
     "/Users/ericross/.nuget/packages/microsoft.net.illink.tasks/8.0.4/microsoft.net.illink.tasks.8.0.4.nupkg.sha512",
+    "/Users/ericross/.nuget/packages/syncfusion.licensing/25.1.40/syncfusion.licensing.25.1.40.nupkg.sha512",
+    "/Users/ericross/.nuget/packages/syncfusion.maui.cards/25.1.40/syncfusion.maui.cards.25.1.40.nupkg.sha512",
+    "/Users/ericross/.nuget/packages/syncfusion.maui.core/25.1.40/syncfusion.maui.core.25.1.40.nupkg.sha512",
     "/Users/ericross/.nuget/packages/the49.maui.bottomsheet/8.0.3/the49.maui.bottomsheet.8.0.3.nupkg.sha512",
     "/Users/ericross/.nuget/packages/xamarin.android.glide/4.15.1.2/xamarin.android.glide.4.15.1.2.nupkg.sha512",
     "/Users/ericross/.nuget/packages/xamarin.android.glide.annotations/4.15.1.2/xamarin.android.glide.annotations.4.15.1.2.nupkg.sha512",
