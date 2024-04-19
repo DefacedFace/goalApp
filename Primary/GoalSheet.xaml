@@ -30,7 +30,8 @@
                 FontAttributes="Bold"
                 VerticalTextAlignment="Start"
                 FontSize="25"
-                MaxLength="70" />
+                MaxLength="50"
+                 />
         <Editor x:Name="EntryGoalDesc"
                 Text=""
                 AutoSize="TextChanges"

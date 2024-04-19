@@ -1,8 +1,10 @@
 using System.Windows.Input;
+using Syncfusion.Maui.Cards;
 
 namespace Primary;
 public partial class GoalSheet
 {
+
 
 	private MainPage mainPage;
 	public GoalSheet(MainPage mainPage)
@@ -10,6 +12,7 @@ public partial class GoalSheet
 		InitializeComponent();
 		this.mainPage = mainPage;
 		Loaded += TargetGoalEntry;
+
 
 	}
 
@@ -28,10 +31,26 @@ public partial class GoalSheet
 		{
 			string goalKeyText = EntryGoal.Text;
 			string goalKeyValueDescText = EntryGoalDesc.Text;
+
 			Preferences.Set("GoalSaveKey", goalKeyText);
 			Preferences.Set("GoalSaveValue", goalKeyValueDescText);
-			// string poop = Preferences.Get("GoalSaveValue", "Null");
-			mainPage.MidStack.Clear();
+
+			bool isGoalActive = true;
+			Preferences.Set("isgoal", isGoalActive);
+
+			SfCardView cardView = new SfCardView()
+			{
+				Content = new Label()
+				{
+					Text = "SfCardView",
+					HorizontalTextAlignment = TextAlignment.Center,
+					VerticalTextAlignment = TextAlignment.Center
+				}
+			};
+			mainPage.MidStack.Children.Clear();
+			mainPage.MidStack.Children.Add(cardView);
+
+
 			await DismissAsync();
 		}
 
