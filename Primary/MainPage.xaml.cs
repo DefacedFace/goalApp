@@ -1,50 +1,49 @@
-﻿using Syncfusion.Maui.Cards;
-
-namespace Primary
+﻿namespace Primary
 {
 	public partial class MainPage : ContentPage
 	{
-		private string[] words = [ "Objective", "Goal", "Focus", "Mission", "Plan",
-			"Aim", "Intent", "Motive", "Purpose", "Resolve", "Conviction", "Drive", "Direction" ];
+		public Label _EmptyGoalText => EmptyGoalText;
 
-		public StackLayout MidStack => midStack;
 
-		private void Motivator()
+		public MainPage() : base()
 		{
-			Random random = new();
-			int index = random.Next(0, words.Length);
-			string randomWord = words[index];
-			WordofPowerment.Text = $"You Have No {randomWord}...";
-			ActionSubText.Text = "Add a goal to complete within 24 hrs";
+			Preferences.Clear();
+			// ^ remember to remove when checking persistance
+			InitializeComponent();
+			DateText.Text = DateTime.Now.Date.ToShortDateString();
+			GoalDataChanged();
+
 		}
 
-		public MainPage()
+		public void GoalDataChanged()
 		{
-			// Preferences.Clear(); 
-			// ^ remember to remove above when checking persistance  
-
-			InitializeComponent();
-
+			string currentGoalValue = Preferences.Get("GoalSaveValue", "Null");
 
 			if (Preferences.Get("isgoal", false) == false)
 			{
-				Motivator();
+				//
 			}
+
 			else
 			{
+				EmptyGoalText.VerticalTextAlignment = TextAlignment.Start;
+				EmptyGoalText.HorizontalTextAlignment = TextAlignment.Start;
 				GoalPress.IsVisible = false;
+				EmptyGoalText.Text = currentGoalValue;
 
-				SfCardView cardView = new()
+				Button timeLimit = new Button
 				{
-					Content = new Label()
-					{
-						Text = "SfCardView",
-						HorizontalTextAlignment = TextAlignment.Center,
-						VerticalTextAlignment = TextAlignment.Center
-					}
+					VerticalOptions = LayoutOptions.End,
+					HorizontalOptions = LayoutOptions.Center,
+					BackgroundColor = Color.FromArgb("B6D969"),
+					Text = "00:00:00",
+					TextColor = Color.FromArgb("121212"),
+					Margin = new Thickness(0, 0, 0, 20)
+
 				};
 
-				midStack.Children.Add(cardView);
+				poop.Children.Add(timeLimit);
+				Grid.SetRow(timeLimit, 2);
 
 			}
 		}
@@ -55,8 +54,10 @@ namespace Primary
 			{
 				HasHandle = true,
 				CornerRadius = 10
+
 			};
 			goalSheet.ShowAsync(Window);
 		}
+
 	}
 }

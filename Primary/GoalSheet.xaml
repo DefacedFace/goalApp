@@ -2,7 +2,8 @@
                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                    xmlns:the49="https://schemas.the49.com/dotnet/2023/maui"
                    x:Class="Primary.GoalSheet"
-                   Padding="16,32">
+                   Padding="16,32"
+                   Background="#121212">
     <the49:BottomSheet.Detents>
         <the49:FullscreenDetent />
     </the49:BottomSheet.Detents>
@@ -15,28 +16,24 @@
                 Clicked="PushDoneButton">
             <Button.Triggers>
                 <DataTrigger TargetType="Button"
-                             Binding="{Binding Source={x:Reference EntryGoal},&#xA;                                       Path=Text.Length}"
+                             Binding="{Binding Source={x:Reference EntryGoalDesc},&#xA;                                       Path=Text.Length}"
                              Value="0">
+                    <Setter Property="BackgroundColor"
+                            Value="#B6D969" />
+                    <Setter Property="TextColor"
+                            Value="#000" />
                     <Setter Property="IsEnabled"
                             Value="False" />
                 </DataTrigger>
             </Button.Triggers>
         </Button>
-        <Editor x:Name="EntryGoal"
-                Keyboard="Text"
-                Text=""
-                AutoSize="TextChanges"
-                Placeholder="Goal"
-                FontAttributes="Bold"
-                VerticalTextAlignment="Start"
-                FontSize="25"
-                MaxLength="50"
-                 />
         <Editor x:Name="EntryGoalDesc"
                 Text=""
+                TextColor="#fff"
                 AutoSize="TextChanges"
                 Placeholder="(manifest today's goal)"
                 FontSize="18"
-                MaxLength="150" />
+                MaxLength="150"
+                VerticalTextAlignment="Start" />
     </StackLayout>
 </the49:BottomSheet>

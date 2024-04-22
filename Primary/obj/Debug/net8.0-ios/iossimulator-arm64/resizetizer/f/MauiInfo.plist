@@ -4,8 +4,15 @@
 <dict>
   <key>UIAppFonts</key>
   <array>
+	<string>Cabin-Medium.ttf</string>
+	<string>HindGuntur-Medium.ttf</string>
+	<string>Inter-Medium.ttf</string>
+	<string>Inter-Regular.ttf</string>
+	<string>MauiInfo.plist</string>
 	<string>OpenSans-Regular.ttf</string>
 	<string>OpenSans-Semibold.ttf</string>
+	<string>WorkSans-Black.ttf</string>
+	<string>WorkSans-Medium.ttf</string>
   </array>
 
 </dict>
